@@ -1,0 +1,183 @@
+/* ========== RESET CSS ========== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== VARIABLES CSS ========== */
+
+:root {
+    --color-icons-header-top: #aebac1;
+
+    --text-color-200: #e9edef;
+
+    --bgColor-green-500: #202c33;
+    --bgColor-green-600: #111b21;
+}
+
+/* ========== GENERIC STYLES ========== */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow: hidden;
+    background-color: #222e35;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ========== HEADER TOP WHATSAPP ========== */
+
+.header {
+    background-color: #ddd;
+    width: 420px;
+    height: 100%;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--bgColor-green-500);
+}
+
+.header__icons {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.header__icons svg {
+    color: var(--color-icons-header-top);
+    cursor: pointer;
+}
+
+.header__searchChat {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--bgColor-green-600);
+    margin-bottom: 2rem;
+}
+
+.header__searchChat input {
+    padding: 1.5rem 3.5rem 1.5rem 6.5rem;
+    border: none;
+    background-color: var(--bgColor-green-500);
+    border-radius: 1rem;
+    width: calc(100% - 4rem);
+    position: relative;
+    outline: none;
+    color: #aebac1;
+    font-size: 1.6rem;
+}
+
+.header__searchChat i {
+    position: absolute;
+    top: 9.5rem;
+    left: 2rem;
+    font-size: 2rem;
+    color: var(--color-icons-header-top);
+}
+
+.header__searchChat .header__icon__filter {
+    padding: .5rem 0 0 1rem;
+}
+
+.header__archiveds {
+    padding: 2rem 1rem 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__archiveds p {
+    font-size: 1.7rem;
+    margin-left: 2.5rem;
+    padding-right: 30rem;
+    padding-bottom: 1rem;
+    color: var(--text-color-200);
+    border-bottom: .1rem solid #e9edef20;
+    
+}
+
+.conversation__bottom {
+    background-color: #111b21;
+    height: 100vh;
+}
+
+.conversation__chat {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .95rem 0 .95rem 1rem;
+    border-top: .1rem solid #e9edef20;
+}
+
+.conversation__chat:nth-child(1) {
+    border: none;
+    padding: none;
+}
+
+.conversation__namePeople .conversation__people {
+    color: #e9edef;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.conversation__namePeople .conversation__lastTalk {
+    font-size: 1.4rem;
+    color: #8696a0;
+    padding-top: .4rem;
+}
+
+.conversation__box {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECTION */
+
+.section {
+    background-color: #222e35;
+    width: calc(100% - 42rem);
+    height: 100%;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    user-select: none;
+}
+
+.section h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 4rem 0 1.6rem 0;
+    color: #e9edefe0;
+}
+
+.section p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #8596a0;
+    line-height: 2rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 788px) {
+    .section {
+        display: none;
+        margin: 0;
+        width: 100%;
+    }
+}
